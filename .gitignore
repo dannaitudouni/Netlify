@@ -89,3 +89,6 @@ public/
 /docs/views/other/guide/asset/
 /docs/views/technical/2020/asset/
 
+
+# Local Netlify folder
+.netlify
