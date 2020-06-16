@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>OPENWRT编译之树莓派4B | 秦中豪</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/assets/css/0.styles.10afba96.css" as="style"><link rel="preload" href="/assets/js/app.6b3fa4da.js" as="script"><link rel="preload" href="/assets/js/3.d5af50ce.js" as="script"><link rel="preload" href="/assets/js/1.afd62b75.js" as="script"><link rel="preload" href="/assets/js/11.d72a2e7f.js" as="script"><link rel="prefetch" href="/assets/js/10.6733be78.js"><link rel="prefetch" href="/assets/js/12.590845a4.js"><link rel="prefetch" href="/assets/js/13.c5469de9.js"><link rel="prefetch" href="/assets/js/4.339257af.js"><link rel="prefetch" href="/assets/js/5.13603d96.js"><link rel="prefetch" href="/assets/js/6.a1c7aa42.js"><link rel="prefetch" href="/assets/js/7.d3fac426.js"><link rel="prefetch" href="/assets/js/8.7b0fbe55.js"><link rel="prefetch" href="/assets/js/9.98379041.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.10afba96.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-4b73742e data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-4b73742e><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>秦中豪</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>秦中豪</span>
+            
+          <span data-v-6cbeab0a>2020 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo_trans.png" alt="秦中豪" class="logo"> <span class="site-name">秦中豪</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/other/" class="nav-link"><i class="iconfont undefined"></i>
+  other
+</a></li><li class="dropdown-item"><!----> <a href="/categories/openwrt/" class="nav-link"><i class="iconfont undefined"></i>
+  openwrt
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><!----> <h3 class="name" data-v-6c8ffc9c>
+    秦中豪
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>3</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>2</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/other/" class="nav-link"><i class="iconfont undefined"></i>
+  other
+</a></li><li class="dropdown-item"><!----> <a href="/categories/openwrt/" class="nav-link"><i class="iconfont undefined"></i>
+  openwrt
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>OPENWRT编译之树莓派4B</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/openwrt/build/#基本说明" class="sidebar-link">基本说明</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/openwrt/build/#安装编译工具" class="sidebar-link">安装编译工具</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/openwrt/build/#获取编译源码" class="sidebar-link">获取编译源码</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/openwrt/build/#树莓派4b编译选项" class="sidebar-link">树莓派4B编译选项</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>OPENWRT编译之树莓派4B</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>秦中豪</span>
+            
+          <span data-v-6cbeab0a>2020 - </span>
+          2020
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>OPENWRT编译之树莓派4B</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>秦中豪</span></i> <i class="iconfont reco-date" data-v-484a899e><span data-v-484a899e>2020-06-01</span></i> <!----> <i class="iconfont reco-tag tags" data-v-484a899e><span class="tag-item" data-v-484a899e>
+      VuePress
+    </span><span class="tag-item" data-v-484a899e>
+      Blog
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="基本说明"><a href="#基本说明" class="header-anchor">#</a> 基本说明</h2> <blockquote><p>转自：<a href="http://leux.cn/doc/OPENWRT%E7%BC%96%E8%AF%91%E4%B9%8B%E6%A0%91%E8%8E%93%E6%B4%BE4B.html" target="_blank" rel="noopener noreferrer">http://leux.cn/doc/OPENWRT编译之树莓派4B.html<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+适用硬件： 树莓派4B
+编译系统： Ubuntu 18 LTS</p></blockquote> <h2 id="安装编译工具"><a href="#安装编译工具" class="header-anchor">#</a> 安装编译工具</h2> <div class="language- extra-class"><pre class="language-text"><code>sudo apt-get update
+sudo apt-get install build-essential asciidoc binutils bzip2 \
+gawk gettext git libncurses5-dev libz-dev patch unzip zlib1g-dev \
+lib32gcc1 libc6-dev-i386 subversion flex uglifyjs libssl-dev upx \
+gcc-multilib p7zip p7zip-full msmtp texinfo libglib2.0-dev xmlto \
+git-core qemu-utils libelf-dev autoconf automake libtool autopoint \
+curl wget device-tree-compiler rsync
+</code></pre></div><h2 id="获取编译源码"><a href="#获取编译源码" class="header-anchor">#</a> 获取编译源码</h2> <div class="language- extra-class"><pre class="language-text"><code># 设置代理来加速源码下载，没有代理可跳过或根据需求设置
+# export all_proxy=&quot;127.0.0.1:7890&quot;
+
+# 获取openwrt官方源码
+mkdir openwrt
+cd openwrt/
+git clone https://git.openwrt.org/openwrt/openwrt.git ./
+
+# 以后每次编译前建议执行以下三行命令更新源码
+git pull
+./scripts/feeds update -a
+./scripts/feeds install -a
+
+make defconfig		# 测试编译环境
+make menuconfig		# 进入固件配置界面
+make download -j8 V=s	# 下载所需源码，请尽量使用梯子
+make -j1 V=s		# 首次编译推荐用单线程
+
+# 再次编译前建议使用make clean清理
+make clean	# 清除bin目录
+make dirclean	# 清除bin目录和交叉编译工具及工具链目录
+make distclean	# 清除所有相关的东西，包括下载的软件包，配置文件，feed内容等
+</code></pre></div><h2 id="树莓派4b编译选项"><a href="#树莓派4b编译选项" class="header-anchor">#</a> 树莓派4B编译选项</h2> <blockquote><p><em>可选内核配置</em></p></blockquote> <div class="language- extra-class"><pre class="language-text"><code># 额外配置内核参数，一般不需要配置
+# 只能包含到内核而不能作为模块，因为编译后的模块不会添加到固件内
+make kernel_menuconfig	# 进入内核配置界面
+
+# 打开KVM支持：Virtualization &gt; Kernel-based Virtual Machine support
+# 修改的内核参数会保存到openwrt/target/linux/bcm27xx/bcm2711/config-5.4
+# 和openwrt/target/linux/generic/config-5.4合成最终内核配置文件
+# openwrt/build_dir/target-aarch64_cortex-a72_musllinux-bcm27xx_bcm2711/linux-5.4.42/.config
+
+</code></pre></div><blockquote><p><em>固件编译配置</em></p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>make menuconfig参数配置
+# 必选配置
+Target System -&gt; Broadcom BCM27xx
+Subtarget -&gt; BCM2711 boards (64 bit)
+Target Profile -&gt; Raspberry Pi 4B
+
+# 镜像参数
+Target Images -&gt; ext4		# ext4格式的固件可方便地调整分区大小
+Target Images -&gt; squashfs	# squashfs格式的固件可恢复出厂设置
+Target Images -&gt; Kernel partition size = 64		# boot分区大小为64M
+Target Images -&gt; Root filesystem partition size = 512	# root分区大小为512M
+
+# 可选工具
+Base system -&gt; block-mount	# 在LuCI界面添加&lt;挂载点&gt;菜单
+Base system -&gt; blockd		# 自动挂载设备
+Base system -&gt; wireless-tools	# 无线扩展工具
+Administration -&gt; htop		# 添加htop命令
+Firmware -&gt; xxx			# 选择你需要的网卡固件，默认即可
+</code></pre></div><blockquote><p><em>内核模块</em></p></blockquote> <div class="language- extra-class"><pre class="language-text"><code># 文件系统
+Kernel modules -&gt; Filesystems -&gt; kmod-fs-ext4
+Kernel modules -&gt; Filesystems -&gt; kmod-fs-ntfs
+Kernel modules -&gt; Filesystems -&gt; kmod-fs-squashfs
+Kernel modules -&gt; Filesystems -&gt; kmod-fs-vfat
+Kernel modules -&gt; Filesystems -&gt; kmod-fuse
+
+# 网卡支持
+Kernel modules -&gt; Network Devices -&gt; kmod-xxx	# 有线网卡支持，跟以下几项可根据需求选择性添加
+Kernel modules -&gt; Wireless Drivers -&gt; kmod-rt2800-usb			# 添加Ralink RT5370芯片的USB无线网卡驱动
+Kernel modules -&gt; USB Support -&gt; kmod-usb-net -&gt; kmod-usb-net-sr9700	# 添加USB2.0的有线网卡SR9700芯片支持
+Kernel modules -&gt; USB Support -&gt; kmod-usb-net -&gt; kmod-usb-net-rtl8152	# 添加USB2/3的有线网卡RTL8152/3芯片支持
+Kernel modules -&gt; USB Support -&gt; kmod-usb-net -&gt; kmod-usb-net-asix	# 添加支持亚信的有线网卡支持
+Kernel modules -&gt; USB Support -&gt; kmod-usb-net -&gt; kmod-usb-net-asix-ax88179  # 添加USB3.0的有线网卡芯片AX88179的驱动
+
+# USB支持
+Kernel modules -&gt; USB Support -&gt; kmod-usb-core		# 启用USB支持
+Kernel modules -&gt; USB Support -&gt; kmod-usb-hid		# USB键鼠支持
+Kernel modules -&gt; USB Support -&gt; kmod-usb-ohci		# 添加OHCI支持
+Kernel modules -&gt; USB Support -&gt; kmod-usb-uhci		# 添加UHCI支持
+Kernel modules -&gt; USB Support -&gt; kmod-usb-storage	# 启用USB存储
+Kernel modules -&gt; USB Support -&gt; kmod-usb-storage-extras
+Kernel modules -&gt; USB Support -&gt; kmod-usb-usb2		# 开启USB2支持
+Kernel modules -&gt; USB Support -&gt; kmod-usb-usb3		# 开启USB3支持
+</code></pre></div><blockquote><p><em>Luci配置</em></p></blockquote> <div class="language- extra-class"><pre class="language-text"><code># LuCI设置
+LuCI -&gt; Collections -&gt; luci				# 开启luci
+LuCI -&gt; Modules -&gt; Translations	-&gt; Chinese(zh-cn)	# 中文支持
+LuCI -&gt; Themes -&gt; luci-theme-material			# 添加主题
+
+# LuCI应用
+LuCI -&gt; Applications -&gt; luci-app-aria2			# 下载工具
+LuCI -&gt; Applications -&gt; luci-app-firewall		# 防 火 墙
+LuCI -&gt; Applications -&gt; luci-app-hd-idle		# 硬盘休眠
+LuCI -&gt; Applications -&gt; luci-app-opkg			# 软 件 包
+LuCI -&gt; Applications -&gt; luci-app-qos			# 服务质量
+LuCI -&gt; Applications -&gt; luci-app-samba4			# 网络共享
+LuCI -&gt; Applications -&gt; luci-app-frpc			# 内网穿透
+LuCI -&gt; Applications -&gt; luci-app-shadowsocks-libev	# 翻墙软件
+LuCI -&gt; Applications -&gt; luci-app-upnp			# UPnP服务
+LuCI -&gt; Applications -&gt; luci-app-wol			# 网络唤醒
+......
+
+</code></pre></div><blockquote><p><em>其他工具</em></p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>Network -&gt; Download Manager -&gt; ariang	# Aria2管理页面
+Network -&gt; File Transfer -&gt; Aria2 Configuration -&gt; ***	# 选择Aria2支持的功能
+Network -&gt; File Transfer -&gt; curl	# 添加curl命令
+Network -&gt; File Transfer -&gt; wget	# 添加wget命令
+Utilities -&gt; Compression -&gt; bsdtar	# tar打包工具
+Utilities -&gt; Compression -&gt; gzip	# GZ 压缩套件
+Utilities -&gt; Compression -&gt; xz-utils	# XZ 压缩套件
+Utilities -&gt; Compression -&gt; unzip	# zip解压工具
+Utilities -&gt; Compression -&gt; zip		# zip压缩工具
+Utilities -&gt; Disc -&gt; fdisk		# 磁盘分区工具
+Utilities -&gt; Disc -&gt; lsblk		# 磁盘查看工具
+Utilities -&gt; Editors -&gt; vim		# vim编辑器
+Utilities -&gt; Filesystem -&gt; ntfs-3g	# NTFS读写支持
+Utilities -&gt; Filesystem -&gt; resize2fs	# 分区大小调整
+Utilities -&gt; Terminal -&gt; screen		# 添加screen
+Utilities -&gt; pciutils			# 添加lspci命令
+Utilities -&gt; usbutils			# 添加lsusb命令
+</code></pre></div><blockquote><p><em>IPV6支持</em></p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>Global build settings -&gt; Enable IPv6 support in packages	# 启用IPv6项
+Network -&gt; odhcp6c						# IPv6客户端
+Network -&gt; odhcpd-ipv6only					# IPv6服务端
+Network -&gt; Firewall -&gt; ip6tables				# IPv6防火墙
+LuCI -&gt; Protocols -&gt; luci-proto-ipv6				# WebUI支持
+
+</code></pre></div><blockquote><p><em>编译设置进系统</em>
+在openwrt目录下新建一个名为files的文件夹，openwrt在编译的时候，会把files文件夹里
+的文件编译到固件的根目录。所以把配置好的文件放入files文件夹即可。</p></blockquote></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><!----></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-a81d141e data-v-a81d141e><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-a81d141e><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-a81d141e></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-a81d141e></path></svg></div></div></div>
+    <script src="/assets/js/app.6b3fa4da.js" defer></script><script src="/assets/js/3.d5af50ce.js" defer></script><script src="/assets/js/1.afd62b75.js" defer></script><script src="/assets/js/11.d72a2e7f.js" defer></script>
+  </body>
+</html>
