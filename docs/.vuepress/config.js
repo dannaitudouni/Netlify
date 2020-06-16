@@ -1,7 +1,7 @@
 module.exports = {
   "title": "秦中豪",
   "description": "",
-  "dest": "public",
+  //"dest": "public",
   "head": [
     [
       "link",
